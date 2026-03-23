@@ -2,38 +2,38 @@ import pandas as pd
 
 values_df = pd.read_csv("/Users/vlad/Developer/Oskin's labs/First/Pokemon.csv", delimiter=',')
 
-print('\nОбщая информаця о данных в таблице')
+print('\nGeneral information about the table data')
 print(values_df.info())
 
-print('\nВывод данных таблицы')
+print('\nTable data output')
 print(values_df)
 
-print('\nВывод названий столбцов таблицы')
+print('\nColumn names output')
 print(values_df.columns)
 
-print('\nКоличество пустых строк')
+print('\nNumber of missing values')
 print(values_df.isnull().sum())
 
-print(f'\nКоличество строк-дубликатов: {values_df.duplicated().sum()}')
+print(f'\nNumber of duplicate rows: {values_df.duplicated().sum()}')
 
 
-# Очистка данных и конвертация в числовой формат
+# Clean data and convert to numeric format
 #values_df['Height'] = values_df['Height'].str.extract(r'(\d+\.\d+)').astype(float)
 #values_df['Weight'] = values_df['Weight'].str.extract(r'(\d+\.\d+)').astype(float)
 #values_df['HP Base'] = values_df['HP Base'].astype(float)
 
 
-# Сортировка по столбцам 'Height'
+# Sort by the 'Height' column
 values_df.sort_values(by=['Height', 'Weight', 'HP Base'], inplace=True)
 
-# Показать результаты
+# Show results
 print(values_df.head())
 
 
-print('Статистика по признакам')
+print('Feature statistics')
 print(values_df.describe())
 
-print('\n1-е 10 значений таблицы')
+print('\nFirst 10 table values')
 print(values_df.head(10))
 
 
@@ -43,7 +43,7 @@ values_arr_Height = np.array(values_df)[:, 3]
 values_arr_Weight = np.array(values_df)[:, 4]
 values_arr_HP_Base = np.array(values_df)[:, 14]
 
-print('Вывод данных массива')
+print('Array data output')
 print(values_arr_Height)
 
 import matplotlib
