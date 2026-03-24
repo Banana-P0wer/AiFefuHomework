@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, root_mean_squared_error
 
 # Load data
-file_path = "/Users/vlad/Developer/Oskin's labs/Third-Second/AAPL.csv"
+file_path = "AAPL.csv"
 data = pd.read_csv(file_path)
 
 # Convert date to datetime format and set it as the index

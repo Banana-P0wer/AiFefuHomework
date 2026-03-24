@@ -1,6 +1,6 @@
 import pandas as pd
 
-values_df = pd.read_csv("/Users/vlad/Developer/Oskin's labs/First/Pokemon.csv", delimiter=',')
+values_df = pd.read_csv("Pokemon.csv", delimiter=',')
 
 print('\nGeneral information about the table data')
 print(values_df.info())
@@ -18,9 +18,9 @@ print(f'\nNumber of duplicate rows: {values_df.duplicated().sum()}')
 
 
 # Clean data and convert to numeric format
-#values_df['Height'] = values_df['Height'].str.extract(r'(\d+\.\d+)').astype(float)
-#values_df['Weight'] = values_df['Weight'].str.extract(r'(\d+\.\d+)').astype(float)
-#values_df['HP Base'] = values_df['HP Base'].astype(float)
+values_df['Height'] = values_df['Height'].str.extract(r'(\d+\.\d+)').astype(float)
+values_df['Weight'] = values_df['Weight'].str.extract(r'(\d+\.\d+)').astype(float)
+values_df['HP Base'] = values_df['HP Base'].astype(float)
 
 
 # Sort by the 'Height' column
