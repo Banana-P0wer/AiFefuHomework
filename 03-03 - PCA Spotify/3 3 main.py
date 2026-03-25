@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load data
-data = pd.read_csv('Spotify Most Streamed Songs.csv', delimiter=',')
+data = pd.read_csv('../datasets/spotify/Spotify Most Streamed Songs.csv', delimiter=',')
 
 # Select numeric features for analysis (skip categorical features)
 numerical_features = ['released_year', 'released_month', 'released_day', 'in_spotify_playlists',

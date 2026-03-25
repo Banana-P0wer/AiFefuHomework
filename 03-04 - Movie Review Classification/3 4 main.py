@@ -8,7 +8,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
 # Load data
-data = pd.read_csv('Movie Reviews.csv')
+data = pd.read_csv('../datasets/movie_reviews/Movie Reviews.csv')
 
 # Convert labels: 'pos' = 1 (positive review), 'neg' = 0 (negative review)
 data['label'] = data['tag'].apply(lambda x: 1 if x == 'pos' else 0)

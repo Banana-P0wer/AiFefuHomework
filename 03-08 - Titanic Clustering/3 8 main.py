@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
 # Read data
-train_df = pd.read_csv('../titanic/train.csv')
-test_df = pd.read_csv('../titanic/test.csv')
+train_df = pd.read_csv('../datasets/titanic/train.csv')
+test_df = pd.read_csv('../datasets/titanic/test.csv')
 
 # Remove columns that are not needed for clustering
 train_data = train_df.drop(columns=['PassengerId', 'Name', 'Ticket', 'Cabin', 'Embarked', 'Survived'])

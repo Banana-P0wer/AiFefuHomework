@@ -9,9 +9,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.impute import SimpleImputer
 
 # Load data
-train_data = pd.read_csv('../titanic/train.csv')
-test_data = pd.read_csv('../titanic/test.csv')
-gender_submission_data = pd.read_csv('../titanic/gender_submission.csv')
+train_data = pd.read_csv('../datasets/titanic/train.csv')
+test_data = pd.read_csv('../datasets/titanic/test.csv')
+gender_submission_data = pd.read_csv('../datasets/titanic/gender_submission.csv')
 
 # Define training features
 features = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']

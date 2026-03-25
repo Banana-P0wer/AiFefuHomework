@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # 1. Load data
-train_data = pd.read_csv('../titanic/train.csv')
-test_data = pd.read_csv('../titanic/test.csv')
+train_data = pd.read_csv('../datasets/titanic/train.csv')
+test_data = pd.read_csv('../datasets/titanic/test.csv')
 
 # 2. Data preprocessing
 # Fill missing values
@@ -87,7 +87,7 @@ plt.show()
 y_pred = svm_model.predict(X_test_scaled)
 
 # 11. Save predictions to submission.csv
-submission_data = pd.read_csv("../titanic/gender_submission.csv")[['PassengerId']]
+submission_data = pd.read_csv("../datasets/titanic/gender_submission.csv")[['PassengerId']]
 submission_data['Survived'] = y_pred
 submission_data.to_csv('submission.csv', index=False)
 

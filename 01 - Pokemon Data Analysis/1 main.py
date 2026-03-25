@@ -1,6 +1,6 @@
 import pandas as pd
 
-values_df = pd.read_csv("Pokemon.csv", delimiter=',')
+values_df = pd.read_csv("../datasets/pokemon/Pokemon.csv", delimiter=',')
 
 print('\nGeneral information about the table data')
 print(values_df.info())

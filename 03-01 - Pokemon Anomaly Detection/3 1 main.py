@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read data
-data = pd.read_csv("pokemonDB_dataset.csv", delimiter=',')
+data = pd.read_csv("../datasets/pokemon/pokemonDB_dataset.csv", delimiter=',')
 
 # Clean data and convert to numeric format
 data['Height'] = data['Height'].str.extract(r'(\d+\.\d+)').astype(float)

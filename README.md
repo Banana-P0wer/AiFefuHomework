@@ -80,11 +80,16 @@ The lab prepares passenger features, applies K-means and Gaussian Mixture cluste
 ├── 03-07 - Titanic AdaBoost
 ├── 03-08 - Titanic Clustering
 ├── Assignments
-├── titanic
+├── datasets
+│   ├── apple_stock
+│   ├── movie_reviews
+│   ├── pokemon
+│   ├── spotify
+│   └── titanic
 └── requirements.txt
 ```
 
-Each lab folder contains the Python source file, a Jupyter Notebook version, the report PDF, and the dataset or output files used by that lab.
+Each lab folder contains the Python source file, a Jupyter Notebook version, the report PDF, and any output files produced by that lab. Input datasets are stored centrally under `datasets/`, with the Titanic dataset shared by several labs.
 
 ## Running Locally
 

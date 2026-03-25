@@ -6,9 +6,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, mean_squared_error, mean_absolute_error
 
 # Read files
-train_data = pd.read_csv('../titanic/train.csv')
-test_data = pd.read_csv('../titanic/test.csv')
-gender_submission_data = pd.read_csv('../titanic/gender_submission.csv')
+train_data = pd.read_csv('../datasets/titanic/train.csv')
+test_data = pd.read_csv('../datasets/titanic/test.csv')
+gender_submission_data = pd.read_csv('../datasets/titanic/gender_submission.csv')
 
 # Remove columns that are not needed for the model
 train_data_clean = train_data.drop(columns=['PassengerId', 'Name', 'Ticket', 'Cabin'])
